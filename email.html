@@ -75,6 +75,35 @@ table tr td.hidden-desktop {
   display: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  z-index: 10;
+  display: block;
+  height: 45px;
+  width: 189px;
+  line-height: 45px;
+  background: #FFBF00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Oswald", "Roboto", sans-serif;
+  text-align: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 20px 0 rgba(255, 197, 0, 0.4);
+}
+
 h2 {
   color: #282828;
   font-size: 20px;
@@ -83,7 +112,7 @@ h2 {
   line-height: 24px;
   margin: 0;
   margin-top: 43px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 h3 {
@@ -100,7 +129,7 @@ p {
   font-size: 12px;
   line-height: 20px;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 32px;
 }
 
 a {
@@ -126,7 +155,7 @@ ul li a {
 .header .header-table {
   width: 600px;
   height: 205px;
-  background-image: url("https://nadia-kamuz.github.io/3dlook/img/top-header.png");
+  background-image: url("img/top-header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,10 +246,10 @@ ul li a {
 }
 .header .header-table .products-navigation td a:hover {
   opacity: 1;
-  color: #FFC200 !important;
+  color: #FFFFFF !important;
 }
 .header .header-table .products-navigation .link td a {
-  padding-top: 200px;
+  padding-top: 186px;
   display: block;
   height: 100%;
 }
@@ -229,36 +258,6 @@ ul li a {
 }
 .header .header-table .products-navigation .link td:nth-child(2)::after {
   display: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-}
-
-.btn {
-  z-index: 10;
-  display: inline-block;
-  height: 45px;
-  width: 189px;
-  line-height: 45px;
-  background: #FFBF00;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: "Oswald", "Roboto", sans-serif;
-  text-align: center;
-  overflow: hidden;
-  transition: box-shadow 0.2s;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  margin-left: 23px;
-  margin-top: 10px;
-}
-
-.btn:hover {
-  box-shadow: 0 4px 20px 0 rgba(255, 197, 0, 0.4) !important;
 }
 
 .content .main-content h2 {
@@ -294,7 +293,7 @@ button {
   height: 98.1%;
 }
 .content .main-content .card td:nth-child(1) {
-  height: 320px;
+  height: 292px;
   width: 41.8%;
   background-color: #fff;
 }
@@ -302,7 +301,7 @@ button {
   padding-right: 25px;
   display: inline-block;
   background-color: #fff;
-  height: 320px;
+  height: 292px;
   padding-left: 24px;
 }
 .content .main-content .card td:nth-child(2) p {
@@ -310,7 +309,6 @@ button {
 }
 .content .main-content .card td img {
   display: block;
-  width: 100%;
 }
 .content .main-content .card-btn-container {
   display: inline-block;
@@ -319,6 +317,9 @@ button {
 }
 .content .main-content .card-btn-container .btn {
   color: #fff;
+}
+.content .main-content .magazine-image {
+  width: 100%;
 }
 .content .hidden-desktop.article table tr td .btn {
   margin-top: 0;
@@ -333,7 +334,7 @@ button {
   width: 100%;
 }
 .content .hidden-desktop.article table tr:nth-child(2) td {
-  height: 275px;
+  height: 173px;
   background-color: #fff;
   padding: 20px !important;
   padding-bottom: 48px;
@@ -352,6 +353,59 @@ button {
 }
 .content .hidden-mobile table {
   margin-bottom: 30px;
+}
+.content .articles .headline table {
+  width: 480px;
+}
+.content .articles .headline table h3 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.content .articles .single-article > td > table {
+  margin-bottom: 20px;
+}
+.content .articles .single-article table tr {
+  border: 2px solid #E5E5E5;
+  height: 150px;
+}
+.content .articles .single-article table tr img {
+  display: block;
+  width: 100%;
+}
+.content .articles .single-article table tr td.pl-20 {
+  padding-top: 5px;
+  padding-right: 20px;
+}
+.content .articles .single-article table tr td h3 {
+  line-height: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 5px 0 !important;
+  padding: 0;
+}
+.content .articles .single-article table tr td .bold {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+.content .articles .single-article table tr td p {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.content .articles .single-article table tr td p a {
+  color: #5B7BD9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.content .articles .single-article table tr td table tr {
+  border: 0;
+  height: auto;
 }
 
 .contact .social-icons td {
@@ -434,37 +488,6 @@ button {
   margin-top: 0;
 }
 
-.social table {
-  width: 600px;
-  margin-bottom: 30px;
-}
-.social table h3 {
-  text-align: left;
-  font-size: 20px;
-  text-align: left;
-  margin-top: 60px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 60px;
-  font-size: 20px;
-}
-.social table h4 {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 60;
-  margin-top: 40px;
-  text-transform: uppercase;
-}
-.social table .btn3 {
-  display: block;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.social table #follow-mobile {
-  display: none;
-}
-
 .footer .desc-table {
   margin-top: 44px;
 }
@@ -480,23 +503,206 @@ button {
 .footer .desc-table .desc a {
   color: #cdcdcd;
 }
+
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .contact > td,
+.hello > td,
+.footer > td {
+    padding: 0 20px !important;
+  }
+
+  .social-icons td {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .social-icons td a {
+    text-align: center;
+    line-height: 45px;
+  }
+  .social-icons td a img {
+    display: inline-block;
+    max-width: 22px;
+  }
+
+  table {
+    width: 100% !important;
+  }
+  table.hidden-desktop {
+    display: table !important;
+  }
+  table.hidden-mobile {
+    display: none;
+  }
+  table tr.hidden-desktop {
+    display: table-row !important;
+  }
+  table tr.hidden-mobile {
+    display: none;
+  }
+  table tr td.hidden-desktop {
+    display: table-cell !important;
+  }
+  table tr td.hidden-mobile {
+    display: none;
+  }
+
+  .header .header-table {
+    height: 225px;
+  }
+  .header .header-table .header-logo-container {
+    padding-left: 20px !important;
+    vertical-align: top;
+  }
+  .header .header-table .header-logo-container .header-logo {
+    margin-bottom: 97px !important;
+  }
+  .header .header-table .header-navigation-container {
+    padding-right: 0;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-right: 38px !important;
+  }
+  .header .header-table .hidden-desktop .products-navigation {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 0 20px !important;
+  }
+  .header .header-table .hidden-desktop .products-navigation td:after {
+    display: none;
+  }
+  .header .header-table .hidden-desktop .products-navigation td a {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #fff !important;
+    opacity: 1;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .articles > td {
+    padding: 20px !important;
+  }
+  .articles .pl-20 {
+    padding: 20px !important;
+  }
+  .articles img {
+    min-width: 100%;
+  }
+
+  .contact .hidden-desktop .title h2 {
+    margin-top: 30px;
+  }
+  .contact .hidden-desktop .avatar {
+    display: inline-block;
+    width: 100px;
+  }
+  .contact .hidden-desktop .avatar img {
+    width: 100%;
+    max-width: 100px;
+    margin-top: 9px;
+  }
+  .contact .hidden-desktop .contact-info {
+    display: inline-block;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    padding-left: 30px !important;
+    padding-top: 10px !important;
+  }
+  .contact .hidden-desktop .contact-info .name {
+    margin: 0;
+    margin-bottom: 5px !important;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  .contact .hidden-desktop .contact-info .position {
+    margin: 0 !important;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+  }
+  .contact .social-icons td {
+    margin: 30px 15px 20px 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .contact .social-icons td a {
+    line-height: 56px !important;
+  }
+  .contact .social-icons td a img {
+    max-width: 32px !important;
+    width: 32px !important;
+  }
+  .contact .social-icons td .instagram {
+    line-height: 62px !important;
+  }
+  .contact .social-icons td .facebook {
+    line-height: 62px !important;
+  }
+  .contact .social-icons td .facebook img {
+    width: 15px !important;
+  }
+  .contact .address {
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #9ca4b1;
+  }
+  .contact .address.second {
+    font-size: 12px;
+    line-height: 20px;
+    color: #9ca4b1;
+  }
+}
+@media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+
+  .header .header-table .header-logo-container .header-logo {
+    width: 113px !important;
+    height: 16px !important;
+  }
+  .header .header-table .header-navigation-container {
+    top: 2px;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-top: 6px !important;
+    margin-right: 10px !important;
+  }
+  .header .header-table .header-navigation-container .header-navigation li {
+    margin-top: 4px !important;
+    margin-right: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
     </style>
 </head>
 <body>
-    <div class="pre-text">Hi! Do you know what makes a strong shopping experience? And what are the top reasons why your customers return their purchases?&zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;</div>
+    <div class="pre-text">We’ve been listening to your feedback so we’ve made 3DLOOK better, bringing a whole host of important improvements in order to enhance your overall experience with us.&zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;&zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp; &zwnj;&nbsp;</div>
     <table class="container">
         <tr class="header">
             <td>
                 <table border="0" cellpadding="0" cellspacing="0" width="600" height="264" align="center" class="header-table">
                     <tr>
                         <td class="header-logo-container" width="100">
-                            <a href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">
-                                <img class="header-logo" src="https://nadia-kamuz.github.io/3dlook/img/logo_3dlook_horizontal_white.png" alt="header-logo">
+                            <a href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">
+                                <img class="header-logo" src="https://nadia-kamuz.github.io/3dlook-email/img/logo_3dlook_horizontal_white.png" alt="header-logo">
                             </a>
                         </td>
                         <td valign="top" class="header-navigation-container">
                             <ul class="header-navigation">
-                                <li><a href="https://3dlook.me/about_3dlook/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">About us</a></li>
+                                <li><a href="https://3dlook.me/about_3dlook/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">About us</a></li>
                                 <li><a href="{{WebLetterUrl}}" target="_blank">Web version</a></li>
                             </ul>
                         </td>
@@ -505,17 +711,17 @@ button {
                         <td>
                             <table width="480" align="center" class="products-navigation">
                                 <tr class="link">
-                                    <td colspan="3"><a href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"></a></td>
+                                    <td colspan="3"><a href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019"></a></td>
                                 </tr>
                                 <tr>
                                     <td width="160">
-                                        <a href="https://3dlook.me/saia-mtm/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">Human Body <br/>Measuring</a>
+                                        <a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">Size and Fit <br/>Recommendations</a>
                                     </td>
                                     <td width="160">
-                                        <a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019">Size and Fit <br/>Recommendations</a>
+                                        <a href="https://3dlook.me/saia-mtm/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019">Human Body <br/>Measuring</a>
                                     </td>
                                     <td width="160">
-                                        <a href="https://3dlook.me/virtual-dressing/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">3D Model <br/>Generation</a>
+                                        <a href="https://3dlook.me/virtual-dressing/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">3D Model <br/>Generation</a>
                                     </td>
                                 </tr>
                             </table>
@@ -525,13 +731,13 @@ button {
                         <td>
                             <table>
                                 <tr class="products-navigation">
-                                    <td><a href="https://3dlook.me/saia-mtm/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">Human Body Measuring</a></td>
+                                    <td><a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">Size and Fit Recommendations</a></td>
                                 </tr>
                                 <tr class="products-navigation">
-                                    <td><a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">Size and Fit Recommendations</a></td>
+                                    <td><a href="https://3dlook.me/saia-mtm/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">Human Body Measuring</a></td>
                                 </tr>
                                 <tr class="products-navigation">
-                                    <td><a href="https://3dlook.me/virtual-dressing/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank" target="_blank">3D Model Generation</a></td>
+                                    <td><a href="https://3dlook.me/virtual-dressing/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank" target="_blank">3D Model Generation</a></td>
                                 </tr>
                             </table>
                         </td>
@@ -544,57 +750,87 @@ button {
                 <table width="480" align="center" class="main-content">
                     <tr class="hello">
                         <td>
-                            <h2>Hello! <img src="https://nadia-kamuz.github.io/3dlook/img/hi.png" alt="Hi"></h2>
-                            <p>This week we want to tell you how personalization in e-commerce can ensure that your business is on the right path. Also take a look at some useful infographic we prepared about returns and their impact on our planet.<br/>
-                            Stay tuned for more! &nbsp; &nbsp;<img src="https://nadia-kamuz.github.io/3dlook/img/stay.png" alt="Hi"></p>
+                            <h2>Making 3DLOOK better for you</h2>
+                            <p>Hi, {{Name}}! &nbsp;<img src="https://nadia-kamuz.github.io/3dlook-email/img/hi.png" alt="Hi"><br/><br/>We’ve been listening to your feedback so we’ve made 3DLOOK better, bringing a whole host of important improvements in order to enhance your overall experience with us.<br/><br/>
+                            Check them out! &nbsp; <img src="https://nadia-kamuz.github.io/3dlook-email/img/stay.png" alt="Hi"></p>
                         </td>
                     </tr>
-                    <tr class="hidden-mobile article">
+                    <tr class="articles">
                         <td>
                             <table>
-                                <tr class="card">
+                                <tr class="single-article">
                                     <td>
-                                        <a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><img src="https://nadia-kamuz.github.io/3dlook/img/personalized-shopping.png" alt="Personalized shopping experience for your customers"></a>
-                                    </td>
-                                    <td>
-                                        <a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><h3>Personalized online shopping experience for your customers: 7 best practices for standing out</h3></a>
-                                        <p><a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019">Many retailers now revisit their practices to become more trusted advisors to their customers and cater to more personalized, immersive and truly meaningful shopping experiences.
-                                        So, what makes a strong shopping experience? How can your company provide a personalized experience for your clients right away? 
-                                        We’ll tell you about 7 basic ways to do so!</a></p>
-                                        <a class="btn" href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">Read More</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr class="hidden-desktop article">
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><img src="https://nadia-kamuz.github.io/3dlook/img/how-mobile-body-small.png" alt="How mobile body measuring software solves the biggest challenges of uniform manufacturing"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><h3>Personalized online shopping experience for your customers: 7 best practices for standing out</h3></a>
-                                        <p><a href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019">Many retailers now revisit their practices to become more trusted advisors to their customers and cater to more personalized, immersive and truly meaningful shopping experiences.
-                                        So, what makes a strong shopping experience? How can your company provide a personalized experience for your clients right away? 
-                                        We’ll tell you about 7 basic ways to do so!</a></p>
-                                        <a class="btn" href="https://3dlook.me/blog/personalized-online-shopping-experience-for-your-customers-7-best-practices-for-standing-out/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">Read More</a>
+                                        <table width="480" height="148" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table align="left" width="141">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/3-thinks-to-know-small.png" alt="3 things to know about real tech investments" border="0" alt="310 new body measurements">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table valign="center">
+                                                        <tr>
+                                                            <td class="pl-20">
+                                                                <h3>310 new body measurements</h3>
+                                                                <p>We've increased the number of body measurements from 35 to 45! And also made all of them compliant with the <span class="bold">ISO 8559-1 standard.</span><br/> Follow this <a href="https://saia.3dlook.me/docs/guide-measurments.html#Volumetric/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019">link</a> to check the new measurements we've added.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
-                            </table>
-                        </td>
-                    </tr>
-                     <tr class="returns">
-                        <td>
-                            <table>
-                                <tr>
+                                <tr class="single-article">
                                     <td>
-                                        <h2>The hight cost of clothing returns</h2>
-                                        <p>What are the reasons customers return clothes and what happens to the apparel when people order online and then return the items?<br/>
-                                        Check out our infographic below.</p>
+                                        <table width="480" height="148" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table align="left" width="141">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/the-system-is-broken-small.png" alt="Made-to-measure fashion brands are looking to solve fashions’ size inclusivity problem" border="0" alt="New processing algorithm">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table valign="center">
+                                                        <tr>
+                                                            <td class="pl-20">
+                                                                <h3>New processing algorithm</h3>
+                                                                <p>In the new release we reduced waiting time from 30 to 20 seconds and improved accuracy for most body parameters. </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="single-article">
+                                    <td>
+                                        <table width="480" height="148" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                    <table align="left" width="141">
+                                                        <tr>
+                                                            <td>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/body-measurement-small.png" alt="Body Measurement Technology" border="0" alt="Widget for remote measurements">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table valign="center">
+                                                        <tr>
+                                                            <td class="pl-20">
+                                                                <h3>Widget for remote measurements</h3>
+                                                                <p>With our web-based widget your customers can measure themselves right on your website in seconds. Easy to integrate, this powerful tool opens new possibilities to scale your business and attract new customers.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>
@@ -603,63 +839,12 @@ button {
                 </table>
             </td>
         </tr>
-        <tr class="problem">
+        <tr class="content">
             <td>
-                <table width="480" align="center" border="0" cellpadding="0" cellspacing="0">
+                <table width="480" class="button">
                     <tr>
-                        <td id="follow-desktop">
-                            <a href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater"><img src="https://nadia-kamuz.github.io/3dlook/img/the-problem.png" alt="The problem of retail clothing returns"></a>
-                            <a class="btn2" href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater" target="_blank">Almost 40% of all online clothing <br>purchases are returned</a>
-                        </td>
-                        <td id="follow-mobile">
-                            <a href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater"><img src="https://nadia-kamuz.github.io/3dlook/img/the-problem-small.png" alt="The problem of retail clothing returns"></a>
-                            <a class="btn2" href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater" target="_blank">Almost 40% of all online clothing <br>purchases are returned</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr class="social">
-            <td>
-                <table width="600" align="center" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td id="follow-desktop">
-                            <h4>Top reasons why customers return purchases</h4>
-                            <a href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater"><img src="https://nadia-kamuz.github.io/3dlook/img/top-reasons.png" alt="The problem of retail clothing returns"></a>
-                            <a class="btn btn3" href="http://bit.ly/2loAx8f" target="_blank">View full infographic</a>
-                        </td>
-                        <td id="follow-mobile">
-                            <h4>Top reasons why customers return purchases</h4>
-                            <a href="https://www.facebook.com/3DLOOK.me/photos/a.1177308205675362/3087536271319203/?type=3&av=1175292442543605&eav=Afb_LUvfle6FE8PE7ERpDLezYAaeXt_OPCihGTII_X_yCdNCAMwZY2MDWTEjNGq7pFDGcRbbPZD383UlFBKL29Z7&theater"><img src="https://nadia-kamuz.github.io/3dlook/img/top-reasons-small.png" alt="The problem of retail clothing returns"></a>
-                            <a class="btn btn3" href="http://bit.ly/2loAx8f" target="_blank">View full infographic</a>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr class="social">
-            <td>
-                <table width="600" align="center" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td id="follow-desktop">
-                            <h3>Follow Us</h3>
-                            <img src="https://nadia-kamuz.github.io/3dlook/img/social-desktop-small.png" usemap="#follow-d">
-                            <map name="follow-d">
-                                <area target="_blank" alt="Twiiter" title="Twiiter" href="https://twitter.com/3dlook_me" coords="301,159,259,116" shape="rect">
-                                <area target="_blank" alt="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/company/3dlook/" coords="310,117,350,159" shape="rect">
-                                <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com/3dlook_me/" coords="310,169,351,209" shape="rect">
-                                <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com/3DLOOK.me/" coords="199,178,239,182,234,221,194,216" shape="poly">
-                            </map>
-                        </td>
-                        <td id="follow-mobile">
-                            <h3>Follow Us</h3>
-                            <img src="https://nadia-kamuz.github.io/3dlook/img/social-mobile-small.png" usemap="#follow-m">
-                            <map name="follow-m">
-                                <area target="_blank" alt="Twitter" title="Twitter" href="https://twitter.com/3dlook_me" coords="156,123,114,81" shape="rect">
-                                <area target="_blank" alt="Facebook" title="Facebook" href="https://www.facebook.com/3DLOOK.me/" coords="106,181,109,139,152,142,148,185" shape="poly">
-                                <area target="_blank" alt="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/company/3dlook/" coords="165,121,205,82" shape="rect">
-                                <area target="_blank" alt="Instagram" title="Instagram" href="https://www.instagram.com/3dlook_me/" coords="205,172,164,132" shape="rect">
-                            </map>
+                        <td>
+                             <a class="btn" href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">request a demo</a>
                         </td>
                     </tr>
                 </table>
@@ -670,40 +855,40 @@ button {
                 <table width="480" class="hidden-mobile">
                     <tr>
                         <td class="avatar">
-                            <img src="https://nadia-kamuz.github.io/3dlook/img/dariia-zaporozhchenko.png" alt="Hi" width="60" height="60">
+                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/andrew-mospan.png" alt="head of sales" width="60" height="60">
                         </td>
                         <td class="contact-info">
                             <span class="name">
-                                <nobr>Dariia Zaporozhchenko</nobr>
+                                <nobr>Andrew Mospan</nobr>
                             </span>
-                            <span class="position">Marketing Manager</span>
+                            <p><span class="position">Head of Sales</span></p>
                         </td>
                         <td class="icons">
                             <table>
                                 <tr class="social-icons">
                                     <td>
                                         <a class="3dlook" href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">
-                                            <img src="https://nadia-kamuz.github.io/3dlook/img/3dlook.png" alt="3dlook">
+                                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/3dlook.png" alt="3dlook">
                                         </a>
                                     </td>
                                     <td>
                                         <a class="linkedin" href="https://www.linkedin.com/company/3dlook/" target="_blank">
-                                            <img src="https://nadia-kamuz.github.io/3dlook/img/linkedin.png" alt="linkedin">
+                                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/linkedin.png" alt="linkedin">
                                         </a>
                                     </td>
                                     <td>
                                         <a class="instagram" href="https://www.instagram.com/3dlook_me/" target="_blank">
-                                            <img src="https://nadia-kamuz.github.io/3dlook/img/instagram.png" alt="instagram">
+                                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/instagram.png" alt="instagram">
                                         </a>
                                     </td>
                                     <td>
                                         <a class="twitter" href="https://twitter.com/3dlook_me" target="_blank">
-                                            <img src="https://nadia-kamuz.github.io/3dlook/img/twitter.png" alt="twitter">
+                                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/twitter.png" alt="twitter">
                                         </a>
                                     </td>
                                     <td>
                                         <a class="facebook" href="https://www.facebook.com/3DLOOK.me/" target="_blank">
-                                            <img src="https://nadia-kamuz.github.io/3dlook/img/facebook.png" alt="facebook">
+                                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/facebook.png" alt="facebook">
                                         </a>
                                     </td>
                                 </tr>
@@ -733,41 +918,41 @@ button {
                     </tr>
                     <tr>
                         <td class="avatar">
-                            <img src="https://nadia-kamuz.github.io/3dlook/img/dariia-zaporozhchenko.png" alt="manager-mobile">
+                            <img src="https://nadia-kamuz.github.io/3dlook-email/img/andrew-mospan.png" alt="head of sales">
                         </td>
                         <td class="contact-info">
                             <p class="name">
-                                <nobr>Dariia Zaporozhchenko</nobr>
+                                <nobr>Andrew Mospan</nobr>
                             </p>
                             <p class="position">
-                                <nobr>Marketing Manager</nobr>
+                                <nobr>Head of Sales</nobr>
                             </p>
                         </td>
                     </tr>
                     <tr class="social-icons">
                         <td>
                             <a class="3dlook" href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019" target="_blank">
-                                <img src="https://nadia-kamuz.github.io/3dlook/img/3dlook.png" alt="3dlook">
+                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/3dlook.png" alt="3dlook">
                             </a>
                         </td>
                         <td>
                             <a class="linkedin" href="https://www.linkedin.com/company/3dlook/" target="_blank">
-                                <img src="https://nadia-kamuz.github.io/3dlook/img/linkedin.png" alt="linkedin">
+                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/linkedin.png" alt="linkedin">
                             </a>
                         </td>
                         <td>
                             <a class="instagram" href="https://www.instagram.com/3dlook_me/" target="_blank">
-                                <img src="https://nadia-kamuz.github.io/3dlook/img/instagram.png" alt="instagram">
+                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/instagram.png" alt="instagram">
                             </a>
                         </td>
                         <td>
                             <a class="twitter" href="https://twitter.com/3dlook_me" target="_blank">
-                                <img src="https://nadia-kamuz.github.io/3dlook/img/twitter.png" alt="twitter">
+                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/twitter.png" alt="twitter">
                             </a>
                         </td>
                         <td>
                             <a class="facebook" href="https://www.facebook.com/3DLOOK.me/" target="_blank">
-                                <img src="https://nadia-kamuz.github.io/3dlook/img/facebook.png" alt="facebook">
+                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/facebook.png" alt="facebook">
                             </a>
                         </td>
                     </tr>
@@ -785,8 +970,6 @@ button {
                 <table width="480" class="desc-table">
                     <tr>
                         <td>
-                            <p class="desc first">In the past you provided 3DLOOK with your email address. Occasionally you will receive emails from us with news and updates about 3DLOOK. If you no longer want to receive these emails just press <a href="{{UnsubscribeUrl}}">unsubscribe</a> and you’ll be removed from our list.</p>
-                            <p class="desc">Thanks!<br>3DLOOK</p>
                             <p class="desc">For information about how we process data and monitor communications please see our <a href="https://3dlook.me/privacy-policy/" target="_blank">Privacy Policy</a> and <a href="https://3dlook.me/terms-of-service/" target="_blank">Terms of Use</a>.</p>
                         </td>
                     </tr>
