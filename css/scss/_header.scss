@@ -6,7 +6,7 @@
     .header-table {
         width: 600px;
         height: 205px;
-        background-image: url('img/top-header.png');
+        background-image: url('https://nadia-kamuz.github.io/3dlook-email/img/top-header.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -55,14 +55,13 @@
 
                 &:hover {
                     opacity: 1;
-                    color: #FFC200 !important;
+                    color: #ffffff;
                 }
             }
         }
 
         .products-navigation {
             border-collapse: collapse;
-            // margin-top: 190px;
             margin-bottom: 12px;
             margin-left: 60px;
 
@@ -76,7 +75,7 @@
                     display: inline-block;
                     width: 2px;
                     height: 2px;
-                    background-color: #9CA4B1;
+                    background-color: transparent;
                     position: absolute;
                     right: 0;
                     top: 11px;
@@ -84,17 +83,17 @@
 
                 &:nth-child(1){
                     &::after{
-                        right: 30px;
+                        right: -20px;
                     }
                 }
 
                 &:nth-child(2) {
                     &:after {
-                        right: -25px;
+                        right: -38px;
                     }
 
                     a {
-                        padding-left: 35px;
+                        padding-left: 65px;
                     }
                 }
 
@@ -121,7 +120,7 @@
 
                     &:hover {
                         opacity: 1;
-                        color: #FFFFFF !important;
+                        color: #ffffff;
                     }
                 }
             }
@@ -129,17 +128,17 @@
             .link {
                 td {
                     a {
-                    padding-top: 186px;
-                    display: block;
-                    height: 100%;
+                        padding-top: 186px;
+                        display: block;
+                        height: 100%;
                     }
-                    &:nth-child(1){
-                        &::after{
-                            display: none;
+                        &:nth-child(1){
+                            &::after{
+                                display: none;
+                            }
                         }
-                    }
-                    &:nth-child(2){
-                        &::after{
+                        &:nth-child(2){
+                            &::after{
                             display: none;
                         }
                     }

@@ -13,12 +13,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F5F6F8;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Oswald, sans-serif;
 }
 body p,
 body a,
 body td {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Oswald, sans-serif;
 }
 body a {
   text-decoration: none;
@@ -155,7 +155,7 @@ ul li a {
 .header .header-table {
   width: 600px;
   height: 205px;
-  background-image: url("img/top-header.png");
+  background-image: url("https://nadia-kamuz.github.io/3dlook-email/img/top-header.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,7 +198,7 @@ ul li a {
 }
 .header .header-table .header-navigation li:hover {
   opacity: 1;
-  color: #FFC200 !important;
+  color: #ffffff;
 }
 .header .header-table .products-navigation {
   border-collapse: collapse;
@@ -213,19 +213,19 @@ ul li a {
   display: inline-block;
   width: 2px;
   height: 2px;
-  background-color: #9CA4B1;
+  background-color: transparent;
   position: absolute;
   right: 0;
   top: 11px;
 }
 .header .header-table .products-navigation td:nth-child(1)::after {
-  right: 30px;
+  right: -20px;
 }
 .header .header-table .products-navigation td:nth-child(2):after {
-  right: -25px;
+  right: -38px;
 }
 .header .header-table .products-navigation td:nth-child(2) a {
-  padding-left: 35px;
+  padding-left: 65px;
 }
 .header .header-table .products-navigation td:nth-child(3):after {
   display: none;
@@ -246,7 +246,7 @@ ul li a {
 }
 .header .header-table .products-navigation td a:hover {
   opacity: 1;
-  color: #FFFFFF !important;
+  color: #ffffff;
 }
 .header .header-table .products-navigation .link td a {
   padding-top: 186px;
@@ -271,45 +271,6 @@ ul li a {
   display: inline-block;
   vertical-align: bottom;
 }
-.content .main-content .card {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  z-index: 10;
-  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
-}
-.content .main-content .card h3 {
-  color: #282828;
-}
-.content .main-content .card p {
-  margin-bottom: 10px;
-}
-.content .main-content .card:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 98.1%;
-}
-.content .main-content .card td:nth-child(1) {
-  height: 292px;
-  width: 41.8%;
-  background-color: #fff;
-}
-.content .main-content .card td:nth-child(2) {
-  padding-right: 25px;
-  display: inline-block;
-  background-color: #fff;
-  height: 292px;
-  padding-left: 24px;
-}
-.content .main-content .card td:nth-child(2) p {
-  color: #000;
-}
-.content .main-content .card td img {
-  display: block;
-}
 .content .main-content .card-btn-container {
   display: inline-block;
   width: 100%;
@@ -320,36 +281,6 @@ ul li a {
 }
 .content .main-content .magazine-image {
   width: 100%;
-}
-.content .hidden-desktop.article table tr td .btn {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-.content .hidden-desktop.article table tr:first-child td {
-  background-color: #fff;
-}
-.content .hidden-desktop.article table tr:first-child td img {
-  width: 100%;
-}
-.content .hidden-desktop.article table tr:nth-child(2) td {
-  height: 173px;
-  background-color: #fff;
-  padding: 20px !important;
-  padding-bottom: 48px;
-  display: inline-block;
-}
-.content .hidden-desktop.article table tr:nth-child(2) td h3 {
-  margin: 0 0 10px !important;
-  color: #282828;
-}
-.content .hidden-desktop.article table tr:nth-child(2) td p {
-  margin-top: 10px !important;
-  margin-bottom: 20px !important;
-}
-.content .hidden-desktop.article table tr:nth-child(2) td .btn {
-  margin-top: 10px;
 }
 .content .hidden-mobile table {
   margin-bottom: 30px;
@@ -368,14 +299,14 @@ ul li a {
 }
 .content .articles .single-article table tr {
   border: 2px solid #E5E5E5;
-  height: 150px;
+  height: auto;
 }
 .content .articles .single-article table tr img {
   display: block;
   width: 100%;
 }
 .content .articles .single-article table tr td.pl-20 {
-  padding-top: 5px;
+  padding-top: 10px;
   padding-right: 20px;
 }
 .content .articles .single-article table tr td h3 {
@@ -503,6 +434,189 @@ ul li a {
 .footer .desc-table .desc a {
   color: #cdcdcd;
 }
+
+@media screen and (max-width: 600px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .contact > td,
+.hello > td,
+.footer > td {
+    padding: 0 20px !important;
+  }
+
+  .social-icons td {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  .social-icons td a {
+    text-align: center;
+    line-height: 45px;
+  }
+  .social-icons td a img {
+    display: inline-block;
+    max-width: 22px;
+  }
+
+  table {
+    width: 100% !important;
+  }
+  table.hidden-desktop {
+    display: table !important;
+  }
+  table.hidden-mobile {
+    display: none;
+  }
+  table tr.hidden-desktop {
+    display: table-row !important;
+  }
+  table tr.hidden-mobile {
+    display: none;
+  }
+  table tr td.hidden-desktop {
+    display: table-cell !important;
+  }
+  table tr td.hidden-mobile {
+    display: none;
+  }
+
+  .header .header-table {
+    height: 225px;
+  }
+  .header .header-table .header-logo-container {
+    padding-left: 20px !important;
+    vertical-align: top;
+  }
+  .header .header-table .header-logo-container .header-logo {
+    margin-bottom: 97px !important;
+  }
+  .header .header-table .header-navigation-container {
+    padding-right: 0;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-right: 38px !important;
+  }
+  .header .header-table .hidden-desktop .products-navigation {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 0 20px !important;
+  }
+  .header .header-table .hidden-desktop .products-navigation td:after {
+    display: none;
+  }
+  .header .header-table .hidden-desktop .products-navigation td a {
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #fff !important;
+    opacity: 1;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .articles > td {
+    padding: 20px !important;
+  }
+  .articles .pl-20 {
+    padding: 20px !important;
+  }
+  .articles img {
+    min-width: 100%;
+  }
+
+  .contact .hidden-desktop .title h2 {
+    margin-top: 30px;
+  }
+  .contact .hidden-desktop .avatar {
+    display: inline-block;
+    width: 100px;
+  }
+  .contact .hidden-desktop .avatar img {
+    width: 100%;
+    max-width: 100px;
+    margin-top: 9px;
+  }
+  .contact .hidden-desktop .contact-info {
+    display: inline-block;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    padding-left: 30px !important;
+    padding-top: 10px !important;
+  }
+  .contact .hidden-desktop .contact-info .name {
+    margin: 0;
+    margin-bottom: 5px !important;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 700;
+  }
+  .contact .hidden-desktop .contact-info .position {
+    margin: 0 !important;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+  }
+  .contact .social-icons td {
+    margin: 30px 15px 20px 0 !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .contact .social-icons td a {
+    line-height: 56px !important;
+  }
+  .contact .social-icons td a img {
+    max-width: 32px !important;
+    width: 32px !important;
+  }
+  .contact .social-icons td .instagram {
+    line-height: 62px !important;
+  }
+  .contact .social-icons td .facebook {
+    line-height: 62px !important;
+  }
+  .contact .social-icons td .facebook img {
+    width: 15px !important;
+  }
+  .contact .address {
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #9ca4b1;
+  }
+  .contact .address.second {
+    font-size: 12px;
+    line-height: 20px;
+    color: #9ca4b1;
+  }
+}
+@media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+
+  .header .header-table .header-logo-container .header-logo {
+    width: 113px !important;
+    height: 16px !important;
+  }
+  .header .header-table .header-navigation-container {
+    top: 2px;
+  }
+  .header .header-table .header-navigation-container .header-navigation {
+    margin-top: 6px !important;
+    margin-right: 10px !important;
+  }
+  .header .header-table .header-navigation-container .header-navigation li {
+    margin-top: 4px !important;
+    margin-right: 20px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
     </style>
 </head>
 <body>
@@ -531,13 +645,13 @@ ul li a {
                                     <td colspan="3"><a href="https://3dlook.me/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019"></a></td>
                                 </tr>
                                 <tr>
-                                    <td width="160">
-                                        <a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">Size and Fit <br/>Recommendations</a>
+                                    <td width="180">
+                                        <a href="https://3dlook.me/saia/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">Size and Fit Recommendations<br/> Platform</a>
                                     </td>
-                                    <td width="160">
+                                    <td width="150">
                                         <a href="https://3dlook.me/saia-mtm/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019">Human Body <br/>Measuring</a>
                                     </td>
-                                    <td width="160">
+                                    <td width="150">
                                         <a href="https://3dlook.me/virtual-dressing/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=sales_october_2019" target="_blank">3D Model <br/>Generation</a>
                                     </td>
                                 </tr>
@@ -568,7 +682,7 @@ ul li a {
                     <tr class="hello">
                         <td>
                             <h2>Making 3DLOOK better for you</h2>
-                            <p>Hi, Alyson! &nbsp;<img src="https://nadia-kamuz.github.io/3dlook-email/img/hi.png" alt="Hi"><br/><br/>We’ve been listening to your feedback so we’ve made 3DLOOK better, bringing a whole host of important improvements in order to enhance your overall experience with us.<br/><br/>
+                            <p>Hi, {{Name}}! &nbsp;<img src="https://nadia-kamuz.github.io/3dlook-email/img/hi.png" alt="Hi"><br/><br/>We’ve been listening to your feedback so we’ve made 3DLOOK better, bringing a whole host of important improvements in order to enhance your overall experience with us.<br/><br/>
                             Check them out! &nbsp; <img src="https://nadia-kamuz.github.io/3dlook-email/img/stay.png" alt="Hi"></p>
                         </td>
                     </tr>
@@ -583,14 +697,14 @@ ul li a {
                                                     <table align="left" width="141">
                                                         <tr>
                                                             <td>
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><img src="https://nadia-kamuz.github.io/3dlook-email/img/3-thinks-to-know-small.png" alt="3 things to know about real tech investments" border="0" alt="310 new body measurements"></a>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/3-thinks-to-know-small.png" alt="3 things to know about real tech investments" border="0" alt="310 new body measurements">
                                                             </td>
                                                         </tr>
                                                     </table>
                                                     <table valign="center">
                                                         <tr>
                                                             <td class="pl-20">
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><h3>310 new body measurements</h3></a>
+                                                                <h3>10 new body measurements</h3>
                                                                 <p>We've increased the number of body measurements from 35 to 45! And also made all of them compliant with the <span class="bold">ISO 8559-1 standard.</span><br/> Follow this <a href="https://saia.3dlook.me/docs/guide-measurments.html#Volumetric/?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019">link</a> to check the new measurements we've added.</p>
                                                             </td>
                                                         </tr>
@@ -608,14 +722,14 @@ ul li a {
                                                     <table align="left" width="141">
                                                         <tr>
                                                             <td>
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><img src="https://nadia-kamuz.github.io/3dlook-email/img/the-system-is-broken-small.png" alt="Made-to-measure fashion brands are looking to solve fashions’ size inclusivity problem" border="0" alt="New processing algorithm"></a>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/the-system-is-broken-small.png" alt="Made-to-measure fashion brands are looking to solve fashions’ size inclusivity problem" border="0" alt="New processing algorithm">
                                                             </td>
                                                         </tr>
                                                     </table>
                                                     <table valign="center">
                                                         <tr>
                                                             <td class="pl-20">
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><h3>New processing algorithm</h3></a>
+                                                                <h3>New processing algorithm</h3>
                                                                 <p>In the new release we reduced waiting time from 30 to 20 seconds and improved accuracy for most body parameters. </p>
                                                             </td>
                                                         </tr>
@@ -633,14 +747,14 @@ ul li a {
                                                     <table align="left" width="141">
                                                         <tr>
                                                             <td>
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><img src="https://nadia-kamuz.github.io/3dlook-email/img/body-measurement-small.png" alt="Body Measurement Technology" border="0" alt="Widget for remote measurements"></a>
+                                                                <img src="https://nadia-kamuz.github.io/3dlook-email/img/body-measurement-small.png" alt="Body Measurement Technology" border="0" alt="Widget for remote measurements">
                                                             </td>
                                                         </tr>
                                                     </table>
                                                     <table valign="center">
                                                         <tr>
                                                             <td class="pl-20">
-                                                                <a href="https://3dlook.me/request-a-quote//?utm_source=newsletter&utm_medium=email&utm_campaign=email_newsletter&utm_content=october_2019"><h3>Widget for remote measurements</h3></a>
+                                                                <h3>Widget for remote measurements</h3>
                                                                 <p>With our web-based widget your customers can measure themselves right on your website in seconds. Easy to integrate, this powerful tool opens new possibilities to scale your business and attract new customers.</p>
                                                             </td>
                                                         </tr>
