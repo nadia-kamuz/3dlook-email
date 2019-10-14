@@ -358,7 +358,7 @@ ul li a {
 }
 .content .articles .single-article table tr {
   border: 2px solid #E5E5E5;
-  height: 150px;
+  height: auto;
 }
 .content .articles .single-article table tr img {
   display: block;
